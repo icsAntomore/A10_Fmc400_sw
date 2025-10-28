@@ -1,0 +1,85 @@
+!SESSION 2025-09-05 05:05:49.554 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=11.0.9.1
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -data /home/morelli/anto/a10_ics/a10_fmc400/software/hps-Fmc400-sw-v01
+
+!ENTRY org.python.pydev.shared_core 1 1 2025-09-05 05:06:10.862
+!MESSAGE Restoring info for: /opt/arm/developmentstudio-2023.1/sw/ide/plugins/com.arm.tpip.jython_2.7.2.20231103_105123/lib/jython-2.7.2-standalone.jar
+!STACK 0
+java.lang.RuntimeException: Restoring info for: /opt/arm/developmentstudio-2023.1/sw/ide/plugins/com.arm.tpip.jython_2.7.2.20231103_105123/lib/jython-2.7.2-standalone.jar
+	at org.python.pydev.ast.interpreter_managers.AbstractInterpreterManager.getInterpretersFromPersistedString(AbstractInterpreterManager.java:461)
+	at org.python.pydev.ast.interpreter_managers.AbstractInterpreterManager.internalRecreateCacheGetInterpreterInfos(AbstractInterpreterManager.java:287)
+	at org.python.pydev.ast.interpreter_managers.AbstractInterpreterManager.setInfos(AbstractInterpreterManager.java:584)
+	at com.arm.pydev.StartupListener.updateConfig(StartupListener.java:223)
+	at com.arm.pydev.StartupListener.earlyStartup(StartupListener.java:82)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.runEarlyStartup(EarlyStartupRunnable.java:79)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.run(EarlyStartupRunnable.java:55)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.ui.internal.Workbench$40.run(Workbench.java:2667)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.io.IOException: Expecting: /home/morelli/anto/a10_ics/a10_fmc400/software/hps-Fmc400-sw-v01/.metadata/.plugins/org.python.pydev/v1_ed280z9tzd2i0cq5h6cpor07f/modulesKeys to exist (and be a file).
+	at org.python.pydev.ast.codecompletion.revisited.ModulesManager.loadFromFile(ModulesManager.java:330)
+	at org.python.pydev.ast.codecompletion.revisited.SystemModulesManager.load(SystemModulesManager.java:443)
+	at org.python.pydev.ast.interpreter_managers.AbstractInterpreterManager.getInterpretersFromPersistedString(AbstractInterpreterManager.java:459)
+	... 9 more
+
+!ENTRY org.python.pydev.shared_core 1 1 2025-09-05 05:06:10.935
+!MESSAGE Finished restoring information for: /opt/arm/developmentstudio-2023.1/sw/ide/plugins/com.arm.tpip.jython_2.7.2.20231103_105123/lib/jython-2.7.2-standalone.jar at: /home/morelli/anto/a10_ics/a10_fmc400/software/hps-Fmc400-sw-v01/.metadata/.plugins/org.python.pydev/v1_ed280z9tzd2i0cq5h6cpor07f
+!STACK 0
+java.lang.RuntimeException: Finished restoring information for: /opt/arm/developmentstudio-2023.1/sw/ide/plugins/com.arm.tpip.jython_2.7.2.20231103_105123/lib/jython-2.7.2-standalone.jar at: /home/morelli/anto/a10_ics/a10_fmc400/software/hps-Fmc400-sw-v01/.metadata/.plugins/org.python.pydev/v1_ed280z9tzd2i0cq5h6cpor07f
+	at org.python.pydev.core.log.Log.logInfo(Log.java:45)
+	at org.python.pydev.ast.interpreter_managers.AbstractInterpreterManager.getInterpretersFromPersistedString(AbstractInterpreterManager.java:506)
+	at org.python.pydev.ast.interpreter_managers.AbstractInterpreterManager.internalRecreateCacheGetInterpreterInfos(AbstractInterpreterManager.java:287)
+	at org.python.pydev.ast.interpreter_managers.AbstractInterpreterManager.setInfos(AbstractInterpreterManager.java:584)
+	at com.arm.pydev.StartupListener.updateConfig(StartupListener.java:223)
+	at com.arm.pydev.StartupListener.earlyStartup(StartupListener.java:82)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.runEarlyStartup(EarlyStartupRunnable.java:79)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.run(EarlyStartupRunnable.java:55)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.ui.internal.Workbench$40.run(Workbench.java:2667)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.python.pydev.shared_core 4 4 2025-09-05 05:06:10.983
+!MESSAGE Info: Rebuilding internal caches: /home/morelli/anto/a10_ics/a10_fmc400/software/hps-Fmc400-sw-v01/.metadata/.plugins/com.python.pydev.analysis/jython_v1_ed280z9tzd2i0cq5h6cpor07f/jython.pydevsysteminfo (Expected error to be provided and got no error!)
+
+!ENTRY org.python.pydev.shared_core 4 4 2025-09-05 05:06:29.920
+!MESSAGE The python client still hasn't connected back to the eclipse java vm (will retry...)
+!STACK 0
+java.lang.RuntimeException: The python client still hasn't connected back to the eclipse java vm (will retry...)
+	at org.python.pydev.core.log.Log.log(Log.java:33)
+	at org.python.pydev.ast.codecompletion.shell.AbstractShell.startIt(AbstractShell.java:331)
+	at org.python.pydev.ast.codecompletion.shell.ShellsContainer.getServerShell(ShellsContainer.java:240)
+	at org.python.pydev.ast.codecompletion.shell.ShellsContainer.getServerShell(ShellsContainer.java:168)
+	at org.python.pydev.ast.codecompletion.shell.AbstractShell.getServerShell(AbstractShell.java:219)
+	at org.python.pydev.ast.codecompletion.revisited.modules.CompiledModule.createTokensFromServer(CompiledModule.java:377)
+	at org.python.pydev.ast.codecompletion.revisited.modules.CompiledModule.<init>(CompiledModule.java:180)
+	at org.python.pydev.ast.codecompletion.revisited.SystemModulesManager.getBuiltinModule(SystemModulesManager.java:376)
+	at org.python.pydev.ast.codecompletion.revisited.SystemModulesManager.getModule(SystemModulesManager.java:416)
+	at com.python.pydev.analysis.additionalinfo.AbstractAdditionalDependencyInfo.updateKeysIfNeededAndSave(AbstractAdditionalDependencyInfo.java:259)
+	at com.python.pydev.analysis.system_info_builder.InterpreterInfoBuilder.syncInfoToPythonPath(InterpreterInfoBuilder.java:160)
+	at com.python.pydev.analysis.system_info_builder.InterpreterInfoBuilder.syncInfoToPythonPath(InterpreterInfoBuilder.java:86)
+	at org.python.pydev.ast.codecompletion.revisited.SyncSystemModulesManager.synchronizeManagerToNameToInfoPythonpath(SyncSystemModulesManager.java:392)
+	at org.python.pydev.ast.codecompletion.revisited.SyncSystemModulesManagerScheduler$SynchJob.run(SyncSystemModulesManagerScheduler.java:257)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.python.pydev.shared_core 4 4 2025-09-05 05:06:34.969
+!MESSAGE Attempt: 2 of 5 failed, trying again...(socket connected: still null)
+!STACK 0
+java.lang.RuntimeException: Attempt: 2 of 5 failed, trying again...(socket connected: still null)
+	at org.python.pydev.core.log.Log.log(Log.java:33)
+	at org.python.pydev.ast.codecompletion.shell.AbstractShell.startIt(AbstractShell.java:350)
+	at org.python.pydev.ast.codecompletion.shell.ShellsContainer.getServerShell(ShellsContainer.java:240)
+	at org.python.pydev.ast.codecompletion.shell.ShellsContainer.getServerShell(ShellsContainer.java:168)
+	at org.python.pydev.ast.codecompletion.shell.AbstractShell.getServerShell(AbstractShell.java:219)
+	at org.python.pydev.ast.codecompletion.revisited.modules.CompiledModule.createTokensFromServer(CompiledModule.java:377)
+	at org.python.pydev.ast.codecompletion.revisited.modules.CompiledModule.<init>(CompiledModule.java:180)
+	at org.python.pydev.ast.codecompletion.revisited.SystemModulesManager.getBuiltinModule(SystemModulesManager.java:376)
+	at org.python.pydev.ast.codecompletion.revisited.SystemModulesManager.getModule(SystemModulesManager.java:416)
+	at com.python.pydev.analysis.additionalinfo.AbstractAdditionalDependencyInfo.updateKeysIfNeededAndSave(AbstractAdditionalDependencyInfo.java:259)
+	at com.python.pydev.analysis.system_info_builder.InterpreterInfoBuilder.syncInfoToPythonPath(InterpreterInfoBuilder.java:160)
+	at com.python.pydev.analysis.system_info_builder.InterpreterInfoBuilder.syncInfoToPythonPath(InterpreterInfoBuilder.java:86)
+	at org.python.pydev.ast.codecompletion.revisited.SyncSystemModulesManager.synchronizeManagerToNameToInfoPythonpath(SyncSystemModulesManager.java:392)
+	at org.python.pydev.ast.codecompletion.revisited.SyncSystemModulesManagerScheduler$SynchJob.run(SyncSystemModulesManagerScheduler.java:257)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
